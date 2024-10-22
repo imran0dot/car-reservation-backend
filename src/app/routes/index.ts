@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { userRouter } from "../model/user/user.route";
 
 const router = Router();
 
@@ -6,8 +7,8 @@ const router = Router();
 // TODO 
 const routes = [
     {
-        path: "/",
-        route: 
+        path: "/authorization",
+        route: userRouter
     }
 ]
 
