@@ -3,10 +3,10 @@ import config from "../config";
 import { ObjectId } from "mongoose";
 
 export interface IToken {
-    id: ObjectId;
+    userId: string;
     name: string;
     email: string;
-    role: "admin" | "user" ;
+    role: "customer" | "admin";
 }
 
 export const createToken = (userData: IToken) => {
