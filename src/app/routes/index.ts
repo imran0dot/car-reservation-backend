@@ -7,7 +7,7 @@ const router = Router();
 // TODO 
 const routes = [
     {
-        path: "/authorization",
+        path: "/auth",
         route: userRouter
     }
 ]

@@ -12,5 +12,7 @@ export default {
     img_api: process.env.IMG_API,
     img_secret: process.env.IMG_SECRET,
     salt_round: process.env.SALT_R,
-    jwt_secret: process.env.JWT_SECRET
+    jwt_secret: process.env.JWT_SECRET,
+    jwt_refresh:  process.env.JWT_SECRET,
+    node_env: process.env.NODE_ENV
 } 

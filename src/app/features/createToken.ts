@@ -9,8 +9,7 @@ export interface IToken {
     role: "customer" | "admin";
 }
 
-export const createToken = (userData: IToken) => {
+export const createToken = (userData: IToken, secretToken: string, expiresIn: string) => {
     //create a new token
-    const token = jwt.sign(userData, config.jwt_secret as string, { expiresIn: '1h' });
-    return token;
+    return jwt.sign(userData, secretToken as string, { expiresIn: expiresIn });
 }
